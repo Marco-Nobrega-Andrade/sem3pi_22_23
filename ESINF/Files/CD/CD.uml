@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="321.3946387614683" y="1567.2107224770643">Project.model.Analtytics.ClientAnalysis</node>
+    <node x="1905.9689411314985" y="487.8100630733944">Project.graph.map.MapVertex</node>
+    <node x="1328.9837060397554" y="-216.0">Project.graph.CommonGraph</node>
+    <node x="-178.0890672782873" y="223.75881594036696">Project.model.Producer</node>
+    <node x="1083.8739009938838" y="1545.2107224770643">Project.model.Analtytics.ProducerAnalysis</node>
+    <node x="-87.18993692660536" y="622.3336678134556">Project.model.Product</node>
+    <node x="1672.954032874618" y="-238.0">Project.graph.map.MapGraph</node>
+    <node x="-87.18993692660536" y="1556.210722477064">Project.model.Analtytics.BasketAnalysis</node>
+    <node x="720.8739009938838" y="1611.2107224770643">Project.model.Analtytics.HubAnalysis</node>
+    <node x="164.55542813455656" y="622.3336678134556">Project.model.Delivery</node>
+    <node x="1981.7033639143729" y="136.35005733944962">Project.graph.Edge</node>
+    <node x="979.9243597094801" y="-259.0">Project.graph.Graph</node>
+    <node x="1528.8739009938838" y="1611.450317756116">Project.model.Analtytics.ShipmentAnalysis</node>
+    <node x="389.22754204892976" y="122.61721139143731">Project.model.Buyer</node>
+    <node x="622.17063264526" y="378.6668339067278">Project.model.Company</node>
+    <node x="720.8739009938838" y="622.3336678134556">Project.model.DistributionNetwork</node>
+    <node x="1074.7225726299694" y="420.0169868119266">Project.model.DistributionNetwork.Track</node>
+    <node x="180.6177370030581" y="-194.59456230886855">Project.model.DistributionNetworkMember</node>
+    <node x="315.55542813455656" y="378.6668339067278">Project.model.Client</node>
+    <node x="1507.571244266055" y="289.6972477064221">Project.graph.matrix.MatrixGraph</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.graph.matrix.MatrixGraph" target="Project.graph.CommonGraph" relationship="GENERALIZATION">
+      <point x="-136.0" y="-270.0" />
+      <point x="1515.071244266055" y="240.84862385321105" />
+      <point x="1496.4837060397554" y="240.84862385321105" />
+      <point x="39.0" y="204.0" />
+    </edge>
+    <edge source="Project.model.DistributionNetwork.Track" target="Project.model.DistributionNetwork" relationship="INNER_CLASS">
+      <point x="0.0" y="50.0" />
+      <point x="1162.7225726299694" y="660.5002508600917" />
+      <point x="1048.8739009938838" y="660.5002508600917" />
+      <point x="0.0" y="-193.0" />
+    </edge>
+    <edge source="Project.graph.CommonGraph" target="Project.graph.Graph" relationship="REALIZATION">
+      <point x="-128.5" y="0.0" />
+      <point x="1025.6988245412845" y="-12.0" />
+      <point x="143.5" y="0.0" />
+    </edge>
+    <edge source="Project.model.Company" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="1.7775229360950107E-4" y="-50.000018348623826" />
+      <point x="756.6708103975536" y="349.0" />
+      <point x="565.1780867737001" y="349.0" />
+      <point x="8.950544724770339" y="67.89024273700306" />
+    </edge>
+    <edge source="Project.model.Client" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="-4.9901089449545" y="-34.4294008027523" />
+      <point x="435.06531918960206" y="349.0" />
+      <point x="565.1780867737001" y="349.0" />
+      <point x="8.950544724770339" y="67.89024273700306" />
+    </edge>
+    <edge source="Project.graph.map.MapGraph" target="Project.graph.CommonGraph" relationship="GENERALIZATION">
+      <point x="-143.5" y="0.0" />
+      <point x="1412.227016437309" y="-23.0" />
+      <point x="1412.227016437309" y="-12.0" />
+      <point x="128.5" y="0.0" />
+    </edge>
+    <edge source="Project.model.Buyer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="142.0" y="62.0" />
+      <point x="698.2275420489298" y="170.8371320718654" />
+      <point x="489.1177370030581" y="170.8371320718654" />
+      <point x="142.0" y="-138.0" />
+    </edge>
+    <edge source="Project.model.Producer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="24.43329510703319" y="-62.92791953363917" />
+      <point x="56.344227828745886" y="113.10091743119261" />
+      <point x="302.55452025993895" y="113.10091743119261" />
+      <point x="302.55452025993895" y="-34.764717125382305" />
+      <point x="365.28746177370033" y="-34.764717125382305" />
+      <point x="18.169724770642233" y="-133.0061162079511" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.3443167095115682" showDependencies="false" x="1438.0575126624628" y="1283.8720912175077" />
+  <SelectedNodes>
+    <node>Project.model.Analtytics.ShipmentAnalysis</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

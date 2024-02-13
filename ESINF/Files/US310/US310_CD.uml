@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-577.5950460829492" y="174.54521889400945">Project.model.Producer</node>
+    <node x="-5.0" y="74.0">Project.model.Buyer</node>
+    <node x="-329.5" y="-50.5">Project.model.Company</node>
+    <node x="-31.526497695852527" y="304.8590149769585">Project.model.Product</node>
+    <node x="822.0" y="-134.0">Project.model.DistributionNetwork</node>
+    <node x="1521.0" y="196.0">Project.model.DistributionNetwork.Track</node>
+    <node x="394.0" y="-134.0">Project.model.Shipment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.model.DistributionNetwork.Track" target="Project.model.DistributionNetwork" relationship="INNER_CLASS">
+      <point x="-88.0" y="0.0" />
+      <point x="328.0" y="0.0" />
+    </edge>
+    <edge source="Project.model.Company" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="134.5" y="0.0" />
+      <point x="162.0" y="0.5" />
+      <point x="0.0" y="-62.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.39398581560283685" showDependencies="false" x="682.4374999999989" y="328.85051843317984" />
+  <SelectedNodes>
+    <node>Project.model.Product</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

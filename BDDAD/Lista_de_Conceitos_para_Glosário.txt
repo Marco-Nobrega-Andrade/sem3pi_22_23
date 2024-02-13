@@ -1,0 +1,27 @@
+Edificio [Tabela] = tipo de Edificio (estábulos para animais, garagens para máquinas e alfaias, armazéns para colheitas, factores de produção (e.g., fertilizantes) e rações para animais, e sistemas de rega incluindo tanques agrícolas.
+
+Exploração [Tabela] = id
+
+Caderno de Campo [Tabela] = Data
+
+Plano de Rega [Tabela] = Tempo de Rega , Periodicidade 
+
+Filtro [Tabela] = tipo de filtro
+
+Tubagem [Tabela] = tipo de tubagem
+
+Rega [Tabela] = tipo de rega, data 
+
+Parcela [Tabela] = designação e área
+
+Cultura [Tabela] = Especie, Tipo de Cultura (Permanente ou Temporário)
+
+Plantação / Colheita [Tabela] = data da colheita, quantidade da colheita
+
+Fator de Produção [Tabela] = Classificação (fertilização, corretivo, adubo ou produto fitofarmaco) nome comercial, formulação (granulado, líquido ou pó)  
+
+Ficha Técnica [Tabela] = Elementos e Substâncias 
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1033.3571428571431" y="-422.07142857142844">Project.model.Analtytics.ClientAnalysis</node>
+    <node x="1016.9960737699012" y="-135.30417927382757">Project.model.Analtytics.ProducerAnalysis</node>
+    <node x="488.88725933830403" y="206.55830811901137">Project.model.Producer</node>
+    <node x="-864.8339164145236" y="280.0">Project.model.Company</node>
+    <node x="-256.55488842662635" y="-424.0">Project.model.DistributionNetwork</node>
+    <node x="1397.1865499603773" y="-113.30417927382757">Project.model.Analtytics.BasketAnalysis</node>
+    <node x="-476.93584080757864" y="-308.71428571428567">Project.model.DistributionNetwork.Track</node>
+    <node x="-550.694402420575" y="280.0">Project.model.Client</node>
+    <node x="1096.4722642460918" y="195.4630700237733">Project.model.Analtytics.ShipmentsAnalysisAlgortihms</node>
+    <node x="503.38725933830403" y="-443.3041792738276">Project.model.Shipment</node>
+    <node x="1377.9086881348612" y="-422.07142857142844">Project.model.Analtytics.HubAnalysis</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.model.DistributionNetwork.Track" target="Project.model.DistributionNetwork" relationship="INNER_CLASS">
+      <point x="0.0" y="-83.0" />
+      <point x="-388.93584080757864" y="-226.69047619047615" />
+      <point x="74.44511157337365" y="-226.69047619047615" />
+      <point x="0.0" y="424.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5675675675675675" showDependencies="false" x="72.0436928175186" y="-5.92322689287289" />
+  <SelectedNodes>
+    <node>Project.model.Company</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="198.0" y="172.0">Project.model.DistributionNetwork</node>
+    <node x="583.5" y="-115.5">Project.model.Company</node>
+    <node x="-121.0" y="326.0">Project.model.DistributionNetworkMember</node>
+    <node x="241.0" y="-16.0">Project.model.Buyer</node>
+    <node x="-191.5" y="-49.0">Project.model.Producer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.model.Company" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="0.0" y="38.5" />
+      <point x="655.0" y="34.0" />
+      <point x="150.0" y="0.0" />
+    </edge>
+    <edge source="Project.model.Buyer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="0.0" y="50.0" />
+      <point x="391.0" y="149.5" />
+      <point x="15.0" y="149.5" />
+      <point x="15.0" y="-116.0" />
+    </edge>
+    <edge source="Project.model.Producer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="0.0" y="83.0" />
+      <point x="0.0" y="-116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.2000000000000002" showDependencies="false" x="332.08333333333326" y="183.41666666666663" />
+  <SelectedNodes>
+    <node>Project.model.Company</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

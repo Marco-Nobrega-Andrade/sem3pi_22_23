@@ -1,0 +1,38 @@
+create or replace PROCEDURE prcOrdenarPeloTempoAuditLog (ordem varchar2) AS
+   
+    audit_dummy AUDITLOG%ROWTYPE;
+    CURSOR c_audit_desc is SELECT * FROM AuditLog ORDER BY Data_audit_log DESC;
+    CURSOR c_audit_asc is SELECT * FROM AuditLog ORDER BY Data_audit_log ASC;
+    ordem_invalida EXCEPTION;
+
+BEGIN
+    IF (UPPER(ordem) = 'ASC' OR UPPER(ordem) = 'ASCENDENTE') THEN
+        OPEN c_audit_asc;
+        DBMS_OUTPUT.PUT_LINE('Audit log por ordem ascendente das datas :');
+        LOOP
+FETCH c_audit_asc INTO audit_dummy;
+            EXIT WHEN c_audit_asc%NOTFOUND;
+            DBMS_OUTPUT.PUT_LINE('ID : ' || audit_dummy.ID_AUDIT_LOG_PK || ' | ID PARCELA :  ' || audit_dummy.ID_PARCELA_FK || ' | DATA : ' || audit_dummy.Data_audit_log 
+            || ' | Operacao : ' || audit_dummy.operacao || ' | Tabela : ' || audit_dummy.tabela || ' | Utilizador : ' || audit_dummy.utilizador);
+END LOOP;
+CLOSE c_audit_asc;
+ELSIF (UPPER(ordem) = 'DESC' OR UPPER(ordem) = 'DESCENDENTE') THEN
+        OPEN c_audit_desc;
+        DBMS_OUTPUT.PUT_LINE('Audit log por ordem descendente das datas :');
+        LOOP
+FETCH c_audit_desc INTO audit_dummy;
+            EXIT WHEN c_audit_desc%NOTFOUND;
+            DBMS_OUTPUT.PUT_LINE('ID : ' || audit_dummy.ID_AUDIT_LOG_PK || ' | ID PARCELA :  ' || audit_dummy.ID_PARCELA_FK || ' | DATA : ' || audit_dummy.Data_audit_log 
+            || ' | Operacao : ' || audit_dummy.operacao || ' | Tabela : ' || audit_dummy.tabela || ' | Utilizador : ' || audit_dummy.utilizador);
+            
+END LOOP;
+CLOSE c_audit_desc;
+ELSE
+        RAISE ordem_invalida;
+END IF;
+EXCEPTION
+    WHEN ordem_invalida THEN
+        DBMS_OUTPUT.PUT_LINE('Parâmetro de ordenação inválida.');
+WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Não foi possivel ordenar.');
+END;

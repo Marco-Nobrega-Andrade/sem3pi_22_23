@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-849.5" y="861.0">Project.model.Client</node>
+    <node x="-523.7518684603886" y="416.61883408071753">Project.model.Product</node>
+    <node x="-1381.0" y="368.0">Project.model.Producer</node>
+    <node x="-1290.0" y="106.0">Project.model.DistributionNetworkMember</node>
+    <node x="-379.0" y="861.0">Project.model.Company</node>
+    <node x="-939.5" y="390.0">Project.model.Buyer</node>
+    <node x="-668.0" y="696.0">Project.model.Shipment</node>
+    <node x="-1279.5" y="1288.0">Project.model.DistributionNetwork.Track</node>
+    <node x="-1521.0" y="586.0">Project.model.DistributionNetwork</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.model.DistributionNetwork.Track" target="Project.model.DistributionNetwork" relationship="INNER_CLASS">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="302.0" />
+    </edge>
+    <edge source="Project.model.Company" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="-293.0" y="668.0" />
+      <point x="-773.0" y="668.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="Project.model.Client" target="Project.model.Buyer" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="Project.model.Buyer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.0" />
+      <point x="-773.0" y="348.0" />
+      <point x="-1173.0" y="348.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="Project.model.Producer" target="Project.model.DistributionNetworkMember" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5346867007672634" showDependencies="false" x="-862.4485799701035" y="903.6" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

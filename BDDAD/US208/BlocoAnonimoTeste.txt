@@ -1,0 +1,35 @@
+Set SERVEROUTPUT ON;
+BEGIN
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARFATORDEPRODUCAO('AduboMil','liquido','adubo','Maria'));
+	
+
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARFATORDEPRODUCAO('Bom dia','gas','adubo','Ze'));
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARFATORDEPRODUCAO('AduboMil','liquido','adubo','Maria'));
+
+	
+
+
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARFATORDEPRODUCAO('AduboDoisMil','liquido','adubo','Ze'));
+	
+end;
+
+Select * from FATORPRODUCAO;
+
+BEGIN
+
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARELEMENTO('--','Azoto','10','g','Subtancia Organica'));
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARELEMENTO('--','Nitrogenio','10','g','Subtancia Organica'));
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARELEMENTO('--','Nitrogenio','10','g','Subtancia Organica'));
+	DBMS_OUTPUT.PUT_LINE(FNCADICIONARELEMENTO('--','Nitrogenio','10','g','Subtancia Organica'));
+
+end;
+
+Select * from ELEMENTO;
+
+BEGIN
+
+	PRCDELETEELEMENTO('--');
+    PRCDELETEFICHATECNICA('--');
+    PRCDELETEFATORPRODUCAO('--');
+	   
+end;

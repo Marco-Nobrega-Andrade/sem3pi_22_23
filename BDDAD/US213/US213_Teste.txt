@@ -1,0 +1,43 @@
+/*Fertilizacao teste*/
+
+insert into Fertilizacao (id_plantacao_fk, id_fator_producao_fk, data_aplicacao, quantidade) values (3,5,DATE '2022-05-30',6000);
+DELETE
+FROM
+    Fertilizacao
+WHERE
+    id_plantacao_fk = 3 and id_fator_producao_fk = 5;
+
+/*Rega teste*/
+
+insert into Rega (id_rega_pk, id_parcela_fk, data_rega, tipo_rega) values (DEFAULT, 4, DATE '2023-05-11', 'BOMBEAMENTO');
+select * from rega;
+
+DELETE
+FROM
+    Rega
+WHERE
+    id_rega_pk = --;
+
+
+/*Plantacao teste*/
+
+insert into Plantacao (id_plantacao_pk, id_parcela_fk, id_cultura_fk, data_colheita, quantidade_colhida)
+values (DEFAULT, 4, 2, DATE '2022-09-23', 2000);
+
+select * from plantacao;
+
+DELETE
+FROM
+    plantacao
+WHERE
+    id_plantacao_pk = --;
+
+
+
+begin
+prcOrdenarPeloTempoAuditLog('DESC');
+end;
+
+begin
+prcOrdenarPeloTempoAuditLog('ASC');
+end;

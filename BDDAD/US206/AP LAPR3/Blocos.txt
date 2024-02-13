@@ -1,0 +1,150 @@
+// CA1
+
+//Criar um setor
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARSETOR(1,'AAAA',200));
+END;
+
+// Ver setor criado
+SELECT * FROM PARCELA;
+
+//Criar setor duplicado
+
+//Criar setores com parâmetros inválidos
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARSETOR(2000,'AAAA',200));
+END;
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARSETOR(1,'AAAA',-200));
+END;
+
+########################################################################
+//CA2
+
+//Criar uma cultura
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARCULTURA('Temporario', 'Milho'));
+END;
+
+//Mostrar cultura criada
+SELECT * FROM CULTURA;
+
+//Setor repetido
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARCULTURA('Temporario', 'Milho'));
+END;
+
+//Setor com tipo inválido
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARCULTURA('aaaaaaa', 'Milho'));
+END;
+
+------------------------------------------------------------------
+
+//Criar uma plantação
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARPLANTACAO(5,3));
+END;
+
+//Mostrar plantação criada
+SELECT * FROM PLANTACAO;
+
+//Criar com valores inválidos
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARPLANTACAO(5000,3));
+END;
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(FNCCRIARPLANTACAO(5,9000));
+END;
+
+
+----------------------------------------------------------------------
+// Mostrar os fields de colheita null
+SELECT * FROM PLANTACAO;
+
+// Atulizar para registar a colheita
+BEGIN
+    prcRegistarColheitaDePlantacao(7,DATE '2022-12-12', 2000);
+END;
+// Mostrar os fields atualizados 
+SELECT * FROM PLANTACAO;
+
+
+// valores inválidos
+BEGIN
+    prcRegistarColheitaDePlantacao(2000,DATE '2022-12-12', 2000);
+END;
+
+BEGIN
+    prcRegistarColheitaDePlantacao(7,DATE '2022-12-12', -1);
+END;
+
+
+#########################################################################
+
+//CA3
+
+//Ordenar por ordem crescente e decrescente pela área
+BEGIN
+    PRCSETORESPORAREA(1,'asc');
+END;
+
+BEGIN
+    PRCSETORESPORAREA(1,'desc');
+END;
+
+//Valores inválidos
+
+BEGIN
+    PRCSETORESPORAREA(300,'desc');
+END;
+
+BEGIN
+    PRCSETORESPORAREA(300,'aaaa');
+END;
+
+############################################################################
+
+//CA4
+
+
+// Mostrar os setores por ordem alfabética
+BEGIN
+    PRCSETORESPORORDEMALFABETICA(1);
+END;
+
+// Valores inválidos
+BEGIN
+    PRCSETORESPORORDEMALFABETICA(200);
+END;
+
+
+############################################################################
+
+//CA5
+
+// Mostrar os setores por culturas plantadas
+BEGIN
+    PRCSETORESPORCULTURA(1);
+END;
+
+//Valor inválido
+BEGIN
+    PRCSETORESPORORDEMALFABETICA(200);
+END;
+
+---------------------------------------------------------------------
+
+// Mostrar os setores por tipo de culturas plantadas
+BEGIN
+    PRCSETORESPORTIPOCULTURA(1);
+END;
+
+//Valor inválido
+BEGIN
+    PRCSETORESPORTIPOCULTURA(200);
+END;
+

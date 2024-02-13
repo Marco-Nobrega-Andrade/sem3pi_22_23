@@ -1,0 +1,12 @@
+Sensor de temperatura:
+-3
+Sensor de velocidade do vento:
+2
+Sensor de direção do vento:
+3
+Sensor de pluviosidade:
+4
+Sensor de humidade atmosférica:
+5
+Sensor de humidade do solo:
+6
